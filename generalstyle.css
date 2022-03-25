@@ -1,0 +1,248 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(17, 17, 17);
+  user-select: none;
+}
+#first-bar {
+  width: 100%;
+  height: 0px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: none;
+  background-color: rgb(44, 28, 28);
+}
+#logospace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  text-align: center;
+}
+#logospace * {
+  color: white;
+  text-decoration: none;
+}
+#logospace h2 {
+  margin-top: 0px;
+}
+#first-bar ul {
+  margin-left: -40px;
+  width: 100%;
+  background-color: rgb(44, 28, 28);
+}
+#first-bar ul li {
+  margin-left: 0px;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(53, 75, 47);
+}
+#first-bar ul li a {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: dimgray;
+  font-size: 1.2rem;
+}
+#first-bar ul li a:hover {
+  color: aqua;
+}
+#soundcloud {
+  background-color: rgb(65, 40, 40, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 140px;
+  height: 30px;
+  position: fixed;
+  top: 16px;
+  left: 20px;
+  z-index: 2;
+  color: white;
+}
+#sound {
+  width: 0px;
+  height: 0px;
+}
+#soundcloud span {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+}
+#soundplay {
+  display: inline-block;
+  height: 100%;
+  width: 45px;
+  cursor: pointer;
+  color: red;
+}
+.container {
+  position: fixed;
+  right: 10px;
+  cursor: pointer;
+  background-color: black;
+  width: 55px;
+  height: 55px;
+  margin-top: 0px;
+  z-index: 2;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 10px 10px;
+  transition: 0.01s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 12px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-7px, -10px);
+}
+.unselect p {
+  font-family: "Edwardian Script ITC";
+  font-size: 2rem;
+  color: rgb(119, 68, 68);
+  user-select: none;
+}
+.unselect P {
+  padding: 0px;
+  margin: 0px;
+  height: 35px;
+}
+#art1 {
+  margin-left: 70px;
+}
+.htmleft span {
+  margin-left: -30px;
+}
+#jackimage {
+  display: none;
+}
+.animletter {
+  display: none;
+  font-size: 6.5rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  /* width: 100px;
+  height: 100px; */
+  font-weight: bold;
+  user-select: none;
+}
+#presentation {
+  font-family: Arial, Helvetica, sans-serif;
+  color: dimgray;
+  font-size: 1.3rem;
+  margin-left: 20px;
+  margin-top: 15px;
+  height: 0px;
+}
+#contact1 {
+  margin-top: 55px;
+  margin-left: 10px;
+}
+.contactme {
+  background-size: 250% 100%;
+  background-image: linear-gradient(
+    -75deg,
+    rgb(17, 17, 17) 50%,
+    antiquewhite 50%
+  );
+  background-position: 100% -200%;
+  transition: background-position 0.5s;
+  width: 250px;
+  height: 60px;
+  text-decoration: none;
+  border: 1px solid antiquewhite;
+  display: flex;
+  color: antiquewhite;
+  letter-spacing: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.contactme:hover {
+  background-position: 0 -100%;
+  color: black;
+}
+@keyframes textanim {
+  0% {
+    transform: scale(1, 1);
+    transition-timing-function: ease-in;
+  }
+  40% {
+    transform: scale(1.3, 0.6);
+  }
+  50% {
+    transform: scale(0.7, 1.3);
+  }
+  70% {
+    transform: scale(1.2, 0.8);
+  }
+  80% {
+    transform: scale(0.8, 1.2);
+  }
+  90% {
+    transform: scale(1.1, 0.9);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+/* .animletter:hover {
+  animation-name: textanim;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+} */
+.animf {
+  animation-name: textanim;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+.animline {
+  user-select: none;
+  height: 90px;
+}
+@media screen and (min-width: 1430px) {
+  body {
+    background-color: rgb(17, 17, 17);
+  }
+  section {
+    margin-left: 150px;
+  }
+
+  .container {
+    display: none;
+  }
+  #soundcloud {
+    left: unset;
+    right: 20px;
+  }
+  #first-bar {
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: block;
+    background-color: rgb(44, 28, 28);
+  }
+}
