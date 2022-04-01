@@ -63,24 +63,7 @@ function animleter(num){
   }, 700); 
   // end
   
-document.addEventListener(
-    'scroll',
-    (event) => {
-       
-      //   alert(document.getElementsByClassName("container")[0].right);
-      const elem = document.getElementsByClassName("animline2")[0];
-      let rect = elem.getBoundingClientRect();
-      if (rect.y<400) {
-        elem.style.display="inline-block";
-        // elem.style.transform="translateY(50px)";
-        elem.style.transition="display 5s";
 
-
-      }
-    console.log(rect.y+"---"+window.innerHeight+"--"+window.innerWidth);
-   }
-   
-);
 // mouse custom 
 var container = document.getElementById("custommouse");
 for (var i = 0; i < 100; i++) {
@@ -116,7 +99,8 @@ function showlink(numb){
   x.style.height="15vw"
 
 }
-
-
-
-
+// sphere animation code:::::::::::::::::::::::::::::::::::::::::::::::::::::
+function turnbg(){
+  let getbg=document.getElementsByClassName('formbganim');
+  getbg[0].style.backgroundcolor='green';
+}
