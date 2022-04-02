@@ -237,7 +237,7 @@ body {
   animation-iteration-count: 1;
 }
 .animline2 span {
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 4.5rem;
 }
 .animline2 {
@@ -344,6 +344,7 @@ body {
 #lastproj {
   display: none;
 }
+/* section2 */
 .tagclass {
   font-family: "Edwardian Script ITC";
   font-size: 2rem;
@@ -363,7 +364,7 @@ body {
   margin-top: -10px;
 }
 .amimletter3 span {
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 4.5rem;
 }
 .amimletter3 div {
@@ -472,7 +473,7 @@ body {
   margin-left: 50px;
 }
 .amimletter4 span {
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 4.5rem;
 }
 .amimletter4 div {
@@ -570,7 +571,12 @@ form {
   background-size: cover;
   width: 85%;
   margin: auto;
-  height: 90vh;
+  height: 850px;
+}
+.map img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 #contact5 {
   margin-left: 50%;
@@ -742,7 +748,6 @@ form {
     background-color: 1d1d1d;
   }
   #section2 {
-    background-color: blueviolet;
     margin-left: 150px;
     margin-top: 30px;
   }

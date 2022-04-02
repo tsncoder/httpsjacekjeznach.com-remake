@@ -104,3 +104,66 @@ function turnbg(){
   let getbg=document.getElementsByClassName('formbganim');
   getbg[0].style.backgroundcolor='green';
 }
+var displayed2=0;
+document.addEventListener(
+    'scroll',
+    (event) => {     
+      let elem = document.getElementsByClassName("animline2");
+      let subelem = document.querySelectorAll('.animline2 span')
+      let rect = elem[0].getBoundingClientRect();
+      
+      if((rect.y<window.innerHeight)&&(displayed2==0)){
+        displayed2=1;
+        for(let l=0; l<subelem.length;l++){   
+          setTimeout(() => {
+          
+          subelem[l].style.display='inline-block';
+          animleter(24+l);
+   }, 100*l);
+ }
+
+      }      
+   }   
+);
+var displayed3=0;
+document.addEventListener(
+    'scroll',
+    (event) => {     
+      let elem = document.getElementsByClassName("amimletter3");
+      let subelem = document.querySelectorAll('.amimletter3 span')
+      let rect = elem[0].getBoundingClientRect();
+      
+      if((rect.y<window.innerHeight)&&(displayed3==0)){
+        displayed3=1;
+        for(let l=0; l<subelem.length;l++){   
+          setTimeout(() => {
+          
+          subelem[l].style.display='inline-block';
+          animleter(36+l);
+   }, 100*l);
+ }
+
+      }      
+   }   
+);
+var displayed4=0;
+document.addEventListener(
+    'scroll',
+    (event) => {     
+      let elem = document.getElementsByClassName("amimletter4");
+      let subelem = document.querySelectorAll('.amimletter4 span')
+      let rect = elem[0].getBoundingClientRect();
+      
+      if((rect.y<window.innerHeight)&&(displayed4==0)){
+        displayed4=1;
+        for(let l=0; l<subelem.length;l++){   
+          setTimeout(() => {
+          subelem[l].style.display='inline-block';
+          animleter(50+l);
+   }, 100*l);
+ }
+
+      }      
+   }   
+);
+// amimletter3 C:\Users\stephane\Desktop\httpsjacekjeznach.com remake\index.html
