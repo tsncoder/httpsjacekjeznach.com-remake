@@ -43,7 +43,7 @@ function animleter(num){
   x[num].classList.toggle('animf');
   setTimeout(() => {
     x[num].classList.toggle('animf')    
-  }, 1000);  
+  }, 700);  
 }
 // end
 // this part make caracters appears when page load
@@ -54,7 +54,7 @@ function animleter(num){
      document.getElementsByClassName('animletter')[i].style.display='inline-block'
      if(i==6)
      document.getElementById("jackimage").style.display='inline-block';
-   }, 100*i);
+   }, 70*i);
  }
  setTimeout(() => {   
      document.getElementById("jackimage").style.transform = "rotate(360deg)"; 
@@ -166,4 +166,30 @@ document.addEventListener(
       }      
    }   
 );
-// amimletter3 C:\Users\stephane\Desktop\httpsjacekjeznach.com remake\index.html
+var displayed5=0;
+var lastsub
+function show(classname){
+
+      let elem = document.getElementsByClassName(classname);
+      let subelem = document.querySelectorAll('.'+classname+'>div')
+      let rect = elem[0].getBoundingClientRect();
+      
+      if((rect.y<window.innerHeight)){
+        displayed5=1;
+        for(let l=0; l<subelem.length;l++){   
+          setTimeout(() => {
+          subelem[l].style.opacity='1';
+          subelem[l].style.transform= 'translateY(-20px)';
+          subelem[l].style.transition='all 2s'
+   }, 100*l);
+ }
+}      
+}
+document.addEventListener(
+    'scroll',
+     (event) => {  
+show('makeappear');  
+show('makeappear2');  
+show('makeappear3');  
+}   
+);
